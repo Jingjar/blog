@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/hello2', 'App\Http\Controllers\SiteController@hello');
+Route::get('/hellodashboard', 'App\Http\Controllers\SiteController@dashboard');
 Route::get('user2/{id?}', function ($id = 2) {
     return 'User' . $id;
 });
