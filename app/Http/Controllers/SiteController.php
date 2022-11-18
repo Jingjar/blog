@@ -15,4 +15,22 @@ class SiteController extends Controller
     {
         return view('dashboard');
     }
+     public function photo()
+    {
+        return view('photo');
+    }
+    public function demo()
+    {
+
+        // $name = "Jingjar";
+        // $age = 20;
+
+        // $data = [];
+        // $data['name'] = 'pp';
+        // $data['age'] = 20;
+        return view('demo')->with([
+            'name' => 'pp',
+            'age' => 20,
+        ]);
+    }
 }

@@ -2,12 +2,13 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - bootstrap 4 navbar</title>
+  <title>CodePen - @yield('title')</title>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'><link rel="stylesheet" href="{{ asset('dashboard/style.css') }}">
-
+@yield('css')
 </head>
+
 <body>
 <!-- partial:index.partial.html -->
 <nav class="navbar navbar-expand-custom navbar-mainbg">
@@ -39,10 +40,14 @@
             </ul>
         </div>
     </nav>
+    @section('content')
+    787987897
+    @show
 <!-- partial -->
   <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script><script  src="{{ asset('dashboard/script.js') }}"></script>
+@yield('js')
 
 </body>
 </html>
